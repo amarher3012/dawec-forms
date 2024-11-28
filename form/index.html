@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario Completo</title>
+		<link rel="stylesheet" href="./assets/index.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset id="personal-data">
+				<legend>Datos personales</legend>
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name" required />
+				<span class="form-required">*</span>
+				<br />
+				<label for="surname">Primer apellido:</label>
+				<input type="text" id="surname" name="surname" required />
+				<span class="form-required">*</span>
+				<br />
+				<label for="lastname">Segundo apellido:</label>
+				<input type="text" id="lastname" name="lastname" required />
+				<span class="form-required">*</span>
+				<br />
+				<label for="adress">Dirección:</label>
+				<input
+					type="text"
+					id="adress"
+					name="adress"
+					placeholder="Calle o plaza, número y piso"
+				/>
+				<br />
+				<label for="phone">Teléfono:</label>
+				<input
+					type="tel"
+					id="phone"
+					name="phone"
+					placeholder="123 33 33 33"
+				/>
+				<span class="form-required">*</span>
+				<br />
+				<label for="email">E-mail:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="ejemplo@ejemplo.com"
+				/>
+				<br />
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password" />
+				<br />
+				<label>Sexo:</label>
+				<input type="radio" id="sex-male" name="sexo" value="male" />
+				<label for="sex-male" id="male">Varón</label>
+				<input
+					type="radio"
+					id="sex-female"
+					name="sexo"
+					value="female"
+				/>
+				<label for="sex-female" id="female">Mujer</label>
+			</fieldset>
+
+			<!-- Nivel de estudios e intereses -->
+			<fieldset>
+				<legend>Nivel de estudios e intereses</legend>
+				<div class="input-wrapper">
+					<label>Nivel de estudios:</label>
+					<br />
+					<input
+						type="radio"
+						id="certificado"
+						name="nivel"
+						value="certificado"
+					/>
+					<label for="certificado">Certificado escolar</label>
+					<br />
+					<input
+						type="radio"
+						id="graduado"
+						name="nivel"
+						value="graduado"
+					/>
+					<label for="graduado">Graduado en E.S.O.</label>
+					<br />
+					<input
+						type="radio"
+						id="bachiller"
+						name="nivel"
+						value="bachiller"
+					/>
+					<label for="bachiller"
+						>Bachiller - Formación Profesional</label
+					>
+					<br />
+					<input
+						type="radio"
+						id="diplomado"
+						name="nivel"
+						value="diplomado"
+					/>
+					<label for="diplomado">Diplomado</label>
+					<br />
+					<input
+						type="radio"
+						id="licenciado"
+						name="nivel"
+						value="licenciado"
+					/>
+					<label for="licenciado">Licenciado o Doctorado</label>
+				</div>
+				<br />
+				<div class="input-wrapper">
+					<label>Recibir artículos sobre los siguientes temas:</label>
+					<br />
+					<input
+						type="checkbox"
+						id="music"
+						name="temas"
+						value="music"
+					/>
+					<label for="music">Música</label>
+					<br />
+					<input
+						type="checkbox"
+						id="sports"
+						name="temas"
+						value="sports"
+					/>
+					<label for="sports">Deportes</label>
+					<br />
+					<input
+						type="checkbox"
+						id="movies"
+						name="temas"
+						value="movies"
+					/>
+					<label for="movies">Cine</label>
+					<br />
+					<input
+						type="checkbox"
+						id="books"
+						name="temas"
+						value="books"
+					/>
+					<label for="books">Libros</label>
+					<br />
+					<input
+						type="checkbox"
+						id="science"
+						name="temas"
+						value="science"
+					/>
+					<label for="science">Ciencia</label>
+				</div>
+			</fieldset>
+
+			<!-- Datos sobre la revista -->
+			<fieldset>
+				<legend>Datos sobre la revista</legend>
+				<label for="frequency"
+					>Frecuencia con la que se recibirá la revista:</label
+				>
+				<select id="frequency" name="frequency">
+					<option value="weekly">Semanal</option>
+					<option value="monthly">Mensual</option>
+					<option value="yearly">Anual</option>
+				</select>
+				<br />
+				<label for="file">Puedes mandar un artículo:</label>
+				<input type="file" id="file" name="file" />
+				<br />
+				<div id="comment-div">
+					<label for="comment" id="comment-label"
+						>Si deseas mandar un comentario:</label
+					>
+					<textarea id="comment" name="comment"></textarea>
+				</div>
+			</fieldset>
+
+			<!-- Comenzar de nuevo -->
+			<fieldset>
+				<legend>Comenzar de nuevo</legend>
+				<p>Borrar todos los datos y volver a empezar</p>
+				<button type="reset">Borrar Todo</button>
+			</fieldset>
+
+			<!-- Enviar -->
+			<fieldset>
+				<legend>Enviar</legend>
+				<p>
+					Enviar formulario por correo electronico. Al pulsar el boton
+					se abrira la pagina de envio de correo, en esa pagina pulsa
+					enviar.
+				</p>
+				<button type="submit">Enviar por Correo</button>
+			</fieldset>
+		</form>
+	</body>
+</html>

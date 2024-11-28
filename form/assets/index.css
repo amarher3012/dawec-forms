@@ -1,0 +1,72 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Fieldset styling */
+fieldset {
+	border: 1px solid #ccc;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+/* Label styling */
+
+label {
+	display: inline-block;
+	width: fit-content;
+	margin-bottom: 5px;
+}
+
+#personal-data > label:not(#male, #female) {
+	display: block;
+}
+
+/* Div styling */
+#comment-div {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Form extras */
+.form-required {
+	color: red;
+}
+
+/* Form elements */
+input,
+select,
+textarea,
+button {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'],
+textarea {
+	width: 300px;
+}
+
+textarea {
+	height: 80px;
+}
+
+input[type='file'] {
+	width: auto;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	width: auto;
+}
+
+button {
+	font-size: 14px;
+	padding: 5px 10px;
+}
